@@ -116,7 +116,7 @@ class Library():
     
     def add_member(self):
         name=self.gener("write the name of the member")
-        if self.exist(name,"member.csv","name")):
+        if self.exist(name,"member.csv","name"):
             self.add_member()
         member=Member()
         member.add_member(name)
